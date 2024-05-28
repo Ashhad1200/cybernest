@@ -9,10 +9,6 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
       label: "Pricing",
       href: "/pricing",
     },
@@ -29,10 +25,6 @@ export const siteConfig = {
     {
       label: "Home",
       href: "/",
-    },
-    {
-      label: "Docs",
-      href: "/docs",
     },
     {
       label: "Pricing",
@@ -53,6 +45,6 @@ export const siteConfig = {
     docs: "https://nextui.org",
     discord: "https://discord.gg/9b6yyZKmH4",
     contectUs: "/contectUs",
-    documentation: "/docs",
+    documentation: "/about",
   },
 };

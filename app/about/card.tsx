@@ -7,7 +7,7 @@ import {
   Image,
   Button,
 } from "@nextui-org/react";
-const DocCard = () => {
+const AboutCard = () => {
   return (
     <div className=" gap-6 grid sm:grid-cols-12  px-8">
       <Card className="col-span-12 sm:col-span-7 h-[400px]">
@@ -160,4 +160,4 @@ const DocCard = () => {
   );
 };
 
-export default DocCard;
+export default AboutCard;
