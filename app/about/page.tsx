@@ -1,27 +1,12 @@
 import { title, subtitle } from "@/components/primitives";
 import DocCard from "./card";
 import {Divider} from "@nextui-org/react";
+import MainHeadingAbout from "./MainHeadingAbout";
 export default function AboutPage() {
   return (
     <>
-      <div className="inline-block  text-center justify-center mt-10 mb-20">
-        <h1 className={title()}>Documentation of&nbsp;</h1>
-        <h1
-          className={title({
-            color:
-              "violet",
-          })}
-        >
-          Cyber Nest&nbsp;
-        </h1>
-        <br />
-        <h2 className={subtitle({ class: "mt-4 " })}>
-          We create custom software, mobile apps, and websites tailored to your
-          needs Our expert <br></br> team turns your ideas into reality. Lets
-          innovate together!
-        </h2>
-      </div>
 
+    <MainHeadingAbout />
       <Divider className="mb-16" />
 
       <DocCard />
