@@ -1,9 +1,12 @@
 import { title } from "@/components/primitives";
+import MainHeadingContactUs from "./MainHeadingContactUs";
+import { Globe } from "./Globe";
 
 export default function contectUsPage() {
   return (
     <div>
-      <h1 className={title()}>Contect Us</h1>
+      <MainHeadingContactUs/>
+      <Globe/>
     </div>
   );
 }

@@ -1,16 +1,22 @@
+import React from 'react'
 import { title, subtitle } from "@/components/primitives";
+import { ServicesCards } from './ServicesCards';
 
 
-const MainHeadingPricing = () => {
+const Services = () => {
   return (
-    <div className="inline-block  text-center justify-center mt-10 mb-20">
+    
+    <React.Fragment >
+
+
+<div className="inline-block  text-start justify-start mt-20 mb-20">
     <h1
       className={title({
         color:
           "violet",
       })}
     >
-      Pricing&nbsp;
+      Our services&nbsp;
     </h1>
     <br />
     <h2 className={subtitle({ class: "mt-4 " })}>
@@ -24,7 +30,12 @@ const MainHeadingPricing = () => {
           voluptatibus officia consequatur numquam minus?
     </h2>
   </div>
+
+<ServicesCards/>
+
+
+    </React.Fragment>
   )
 }
 
-export default MainHeadingPricing
+export default Services

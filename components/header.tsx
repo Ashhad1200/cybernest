@@ -1,15 +1,19 @@
+import React from 'react';
 import { title, subtitle } from "@/components/primitives";
 
-const Header = ({ description }) => {
+const MainHeader = ({ mainTitle, highlightTitle, subtitleText }) => {
   return (
-    <div className="inline-block text-center justify-center">
-      {/* <h1 className="title">{heading}&nbsp;</h1>
-      <h1 className="title" style={{ color: "violet" }}>
-        {highlightedText}&nbsp;
+    <div className="inline-block text-center justify-center mt-10 mb-20">
+      <h1 className={title()}>{mainTitle}&nbsp;</h1>
+      <h1 className={title({ color: "violet" })}>
+        {highlightTitle}&nbsp;
       </h1>
-      <br /> */}
-      <h2 className="subtitle mt-4">{description}</h2>
+      <br />
+      <h2 className={subtitle({ class: "mt-4 " })}>
+        {subtitleText}
+      </h2>
     </div>
   );
 };
-export default Header;
+
+export default MainHeader;
