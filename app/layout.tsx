@@ -1,10 +1,9 @@
 import "@/styles/globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata, Viewport } from "next";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
-
 import { Providers } from "./providers";
-
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
@@ -38,7 +37,7 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
+          fontSans.variable
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
@@ -46,6 +45,7 @@ export default function RootLayout({
             <Navbar />
             <main className="container mx-auto flex-grow">
               {children}
+              <SpeedInsights />
             </main>
             <footer className="w-full flex items-center justify-center py-3">
               <Link
